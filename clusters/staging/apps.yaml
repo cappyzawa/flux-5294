@@ -15,6 +15,7 @@ spec:
   - target:
       kind: Deployment
       name: api
+      namespace: default
     patch: |-
       - op: replace
         path: /spec/replicas
