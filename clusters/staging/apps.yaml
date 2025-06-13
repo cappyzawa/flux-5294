@@ -12,11 +12,3 @@ spec:
     kind: GitRepository
     name: repo
     namespace: flux-system
-  patches:
-  - target:
-      kind: Deployment
-      name: api
-    patch: |-
-      - op: replace
-        path: /spec/replicas
-        value: 3
