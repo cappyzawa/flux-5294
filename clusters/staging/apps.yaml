@@ -4,6 +4,7 @@ metadata:
   name: apps
   namespace: flux-system
 spec:
+  targetNamespace: default
   interval: 1m
   path: ../../base
   prune: true
@@ -15,7 +16,6 @@ spec:
   - target:
       kind: Deployment
       name: api
-      namespace: default
     patch: |-
       - op: replace
         path: /spec/replicas
