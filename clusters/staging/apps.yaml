@@ -6,7 +6,7 @@ metadata:
 spec:
   targetNamespace: default
   interval: 1m
-  path: ../../base
+  path: ../base
   prune: true
   sourceRef:
     kind: GitRepository
